@@ -4,10 +4,10 @@ from .serializers import AlbumSerializer, PhotoSerializer
 
 
 class AlbumViewSet(viewsets.ModelViewSet):
-    queryset = Album.objects.all()
+    queryset = Album.objects.all().order_by('-id')
     serializer_class = AlbumSerializer
 
 
 class PhotoViewSet(viewsets.ModelViewSet):
-    queryset = Photo.objects.all()
+    queryset = Photo.objects.all().order_by('-id')
     serializer_class = PhotoSerializer
