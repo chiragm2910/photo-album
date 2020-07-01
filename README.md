@@ -18,29 +18,29 @@ Response:
 
 ```
 {
-    "count": 1,
+    "count": 2,
     "next": null,
     "previous": null,
     "results": [
         {
             "id": 1,
-            "user": "test 2",
-            "description": "test album 2",
-            "image": "https://simpleis.com",
-            "created_at": "2020-07-01T04:58:18.463360Z",
-            "updated_at": "2020-07-01T04:58:18.463418Z",
+            "user": "test 5",
+            "description": "test album 5",
+            "image": "https://simpleisbetterthancomplex.com",
+            "created_at": "2020-07-01T09:09:38.323023Z",
+            "updated_at": "2020-07-01T09:11:13.603775Z",
             "albums": [
-                {
-                    "id": 1,
-                    "name": "Birthday bash",
-                    "description": "Birthday photos",
-                    "created_at": "2020-07-01T04:58:32.667685Z",
-                    "updated_at": "2020-07-01T04:59:36.381241Z",
-                    "photos": [
-                        1
-                    ]
-                }
+                1
             ]
+        },
+        {
+            "id": 2,
+            "user": "test 6",
+            "description": "test album 6",
+            "image": "https://simpleisbetterthancomplex.com",
+            "created_at": "2020-07-01T09:09:51.006959Z",
+            "updated_at": "2020-07-01T09:09:51.007015Z",
+            "albums": []
         }
     ]
 }
@@ -62,12 +62,22 @@ Response:
     "results": [
         {
             "id": 1,
-            "name": "Birthday bash",
-            "description": "Birthday photos",
-            "created_at": "2020-07-01T04:58:32.667685Z",
-            "updated_at": "2020-07-01T04:59:36.381241Z",
+            "name": "Birthday bash 1",
+            "description": "Birthday photos 1",
+            "created_at": "2020-07-01T09:10:10.069375Z",
+            "updated_at": "2020-07-01T09:11:19.612676Z",
             "photos": [
-                1
+                {
+                    "id": 1,
+                    "user": "test 5",
+                    "description": "test album 5",
+                    "image": "https://simpleisbetterthancomplex.com",
+                    "created_at": "2020-07-01T09:09:38.323023Z",
+                    "updated_at": "2020-07-01T09:11:13.603775Z",
+                    "albums": [
+                        1
+                    ]
+                }
             ]
         }
     ]
